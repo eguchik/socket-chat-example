@@ -15,12 +15,6 @@ io.on("connection", (socket) => {
   });
 });
 
-io.emit("some event", {
-  // This will emit the event to all connected sockets
-  someProperty: "some value",
-  otherProperty: "other value",
-});
-
 server.listen(3000, () => {
   console.log("listening on *:3000");
 });
